@@ -42,7 +42,7 @@ const Todo = (props) => {
 		     <ListItem>		    
 		        <ListItemText primary="Todo" secondary={props.todo.todo}></ListItemText>
 		     	<button style={{ 
-			    marginRight: "0.01%", 
+			    marginRight: "2%", 
 			    cursor: "pointer",
 			    padding: "3px 16px",
 			    borderRadius: "8px",
