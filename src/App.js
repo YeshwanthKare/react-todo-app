@@ -36,8 +36,8 @@ function App() {
 
       <form>
         <FormControl>
-          <InputLabel>Write a Todo</InputLabel>
-          <Input type="text" placeholder="Add todo" onChange={(e) => setInput(e.target.value)} value={input}/>
+          <InputLabel style={{ color: "white" }}>Write a Todo</InputLabel>
+          <Input type="text" style={{ color: "white" }} placeholder="Add todo" onChange={(e) => setInput(e.target.value)} value={input}/>
         </FormControl>
         <Button onClick={handleSubmit} type="submit" disabled={!input} variant="contained" color="primary">
           Add Todo

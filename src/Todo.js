@@ -47,7 +47,7 @@ const Todo = (props) => {
 			    padding: "3px 16px",
 			    borderRadius: "8px",
 			    border: "3px solid whitesmoke",
-			    background: "rgb(177, 128, 128)",
+			    background: "rgb(30, 142, 216)",
 			    color: "white" 
 			    }}  onClick={e => setOpen(true)}>
 			        Edit
