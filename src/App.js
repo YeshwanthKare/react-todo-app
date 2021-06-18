@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() =>{
     db.collection("todos").orderBy("timestamp","desc").onSnapshot(snapshot => {
-      setTodos(snapshot.docs.map(doc => ({id: doc.id, todo: doc.data().todo})))
+      setTodos(snapshot.docs.map(doc => ({id: doc.id, timestamp: doc.data().timestamp, todo: doc.data().todo})))
     })
   },[])
 
@@ -29,11 +29,6 @@ function App() {
     setTodos([...todos, input]);
     setInput("")
   }
-
-  
-
-
-
 
   return (
     <div className="App">
